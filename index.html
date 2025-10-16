@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To‑Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>To‑Do</h1>
+      <p class="sub">Simple, minimal, and persistent</p>
+    </header>
+
+    <section class="card">
+      <form id="todo-form" class="input-row" aria-label="Add new task">
+        <input id="todo-input" type="text" placeholder="Add a new task..." aria-label="Task description" autocomplete="off" />
+        <button id="add-btn" type="submit" aria-label="Add task">Add</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+      <div class="footer">
+        <span id="counter">0 tasks</span>
+        <button id="clear-completed" class="link-btn">Clear completed</button>
+      </div>
+    </section>
+
+    <footer class="credits">
+      Built with HTML · CSS · JavaScript — localStorage
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
